@@ -1,21 +1,15 @@
-const title = document.querySelector(#h1)
+const entrada = document.getElementById("entrada");
+const botao = document.getElementById("adicionar");
+const lista = document.getElementById("lista");
 
-const input = document.getElementById('busca')
-const lista = document.getElementById('resultados')
+botao.addEventListener("click", () => {
+    const texto = entrada.value;
 
-input.addEventListener('input', (e) => {
-    const termo = e.target.value.toLowerCase()
-}
-);
+    const item = document.createElement("li");
 
-let produtos = []
+    item.textContent = texto;
 
-produtos.forEach(nome => {
-    const itens = document.createElement('ul');
-    itens.textContent = nome;
+    lista.appendChild(item);
+
+    entrada.value = "";
 });
-
-
-
-document.body.appendChild(produtos)
-
