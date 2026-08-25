@@ -8,7 +8,14 @@ input.addEventListener('input', (e) => {
 }
 );
 
-const lista = document.createElement('busca');
-novoItem.text.textContent = 'Novo item'
+let produtos = []
 
-lista.appendChild(novoItem)
+produtos.forEach(nome => {
+    const itens = document.createElement('ul');
+    itens.textContent = nome;
+});
+
+
+
+document.body.appendChild(produtos)
+
