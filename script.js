@@ -5,7 +5,7 @@ const lista = document.getElementById("lista");
 botao.addEventListener("click", () => {
     const texto = entrada.value;
 
-    const item = document.createElement("li");
+    const item = document.createElement("ul");
 
     item.textContent = texto;
 
