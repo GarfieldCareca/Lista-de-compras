@@ -1,0 +1,9 @@
+.conteiner{
+    display: flex;
+    background-color: lightgray;
+    justify-content: flex-start;
+}
+
+.corpo{
+   background-color: lightyellow;
+}
